@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	class bomon_controller {
 		function __construct() {
 
@@ -15,7 +15,7 @@
 				case 'add':
 					$action_POST = isset($_POST["submit"]) ? $_POST["submit"] : '';
 					if (empty($action_POST)) {
-						$bomon = new Bomon();
+						
 
 						$khoa_db_manager = new Khoa_db_manager();
 						$khoas = $khoa_db_manager->list_all();
